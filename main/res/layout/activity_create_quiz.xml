@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall21"
+    tools:context=".CreateQuizActivity">
+    <TextView
+        android:id="@+id/textR"
+        android:textAllCaps="true"
+
+        android:text="Add Question to Database"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"/>
+
+    <!--Edit text to enter course name-->
+    <EditText
+        android:id="@+id/idEdtQuestion"
+
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="2"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:hint="Enter Question" />
+
+
+
+
+    <!--edit text to display course tracks-->
+
+    <EditText
+        android:id="@+id/idEdtChoice1"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Enter option 1" />
+
+    <!--edit text for course description-->
+    <EditText
+        android:id="@+id/idEdtChoice2"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Enter option 2" />
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtChoice3"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Enter option 3" />
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtChoice4"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Enter option 4" />
+    <!--edit text to enter course duration-->
+    <EditText
+        android:id="@+id/idEdtAnswer"
+        android:textSize="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="5dp"
+        android:background="@drawable/btn_style"
+        android:maxLines="1"
+        android:ems="10"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center"
+        android:hint="Enter Answer"
+        android:textStyle="italic"/>
+
+    <!--button for adding new course-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/idBtnAddQuestion"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/btn_style"
+
+        android:layout_gravity="center"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#382938"
+        android:visibility="visible"
+        android:text="Add Question"
+        android:textAllCaps="false" />
+
+    <!--new button for opening our course list activity-->
+    <Button
+        android:id="@+id/idBtnPreviewQues"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/btn_style"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="#382938"
+        android:visibility="visible"
+        android:text="Preview All Questions"
+        android:textAllCaps="false" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+    <Button
+        android:id="@+id/backToMain"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_margin="0dp"
+        android:background="@drawable/btn_style"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+
+
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textColor="#382938"
+        android:visibility="visible"
+        android:text="Back to Main Screen"
+        android:textAllCaps="false"/>
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_margin="0dp"
+            android:background="@drawable/btn_style"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="20sp"
+
+
+            android:shadowColor="#455B58"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:textColor="#382938"
+            android:visibility="visible"
+            android:text="cancel"
+            android:textAllCaps="true"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wall21"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:textSize="30sp"
+        android:text="You must login to continue"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/username"
+        android:maxLines="1"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/pressed"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:padding="10dp"
+        android:gravity="center">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:textSize="20sp"
+        android:id="@+id/password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_width="match_parent"
+        android:background="@drawable/pressed"
+        android:textColor="#382938"
+        android:shadowColor="#455B58"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:layout_below="@+id/username"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:padding="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btn_style"
+            android:textColor="#382938"
+            android:shadowColor="#455B58"
+            android:shadowDx="2"
+            android:textSize="20sp"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+
+            android:text="LOGIN" />
+
+        <Button
+            android:id="@+id/register"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btn_style"
+            android:textSize="20sp"
+            android:textColor="#382938"
+            android:shadowColor="#455B58"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="1"
+            android:text="REGISTER" />
+
+
+
+
+
+</RelativeLayout>
